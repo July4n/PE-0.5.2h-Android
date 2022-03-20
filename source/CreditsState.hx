@@ -81,7 +81,14 @@ class CreditsState extends MusicBeatState
 		#end
 
 		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
-		        ['Android Port'],
+                        ['the bob ass pack por'],
+                        ['July4n','c july4n','Creador y programador del modpack','https://youtube.com/channel/UCNAe-mX-I647TGBFs4dhUmw', 'FFFFFFFF'],
+                        [''],
+                        ['Creadores del vs Bob'],
+                        ['Phlox','phlox','Creador del vs Bob','https://twitter.com/HiPhlox?t=3rO0ac3h_5q60oV1ug7-ww&s=09', 'FFAE5CE1'],
+                        ['Wildy','wildy','omaigaf wildy','https://twitter.com/wildythomas1233?t=zM5Vpzw6kzGaO2Za7hAvvQ&s=09', 'FFDA7D25'],
+                        [''],
+		        ['psych engine Android Port'],
 		        ['Saw (M.A. Jigsaw)','saw','Main Coder','https://www.youtube.com/channel/UC2Sk7vtPzOvbVzdVTWrribQ', 'F73838'],
 		        [''],
 			['Psych Engine Team'],
