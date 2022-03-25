@@ -70,8 +70,8 @@ class PlayState extends MusicBeatState
 		['Mi mami juega mejor', 0.2], //From 0% to 19%
 		['RUN !!', 0.4], //From 20% to 39%
 		['When no childrends', 0.5], //From 40% to 49%
-		['Amor sucks', 0.6], //From 50% to 59%
-		['RONalcd McDonalds', 0.69], //From 60% to 68%
+		['Matate', 0.6], //From 50% to 59%
+		['Verga', 0.69], //From 60% to 68%
 		['las de 6 son god', 0.7], //69%
 		['Let s Go', 0.8], //From 70% to 79%
 		['vete ala verga', 0.9], //From 80% to 89%
@@ -2315,9 +2315,9 @@ class PlayState extends MusicBeatState
 		super.update(elapsed);
 
 		if(ratingName == '?') {
-			scoreTxt.text = 'Score: ' + songScore + ' | Misses: ' + songMisses + ' | Rating: ' + ratingName;
+			scoreTxt.text = 'Score: ' + songScore + ' | C Fallos: ' + songMisses + ' | Rating: ' + ratingName;
 		} else {
-			scoreTxt.text = 'Score: ' + songScore + ' | Misses: ' + songMisses + ' | Rating: ' + ratingName + ' (' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%)' + ' - ' + ratingFC;//peeps wanted no integer rating
+			scoreTxt.text = 'Score: ' + songScore + ' | C Fallos: ' + songMisses + ' | Rating: ' + ratingName + ' (' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%)' + ' - ' + ratingFC;//peeps wanted no integer rating
 		}
 
 		if(botplayTxt.visible) {
