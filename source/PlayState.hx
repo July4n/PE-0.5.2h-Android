@@ -69,7 +69,7 @@ class PlayState extends MusicBeatState
 	public static var ratingStuff:Array<Dynamic> = [
 		['Mi mami juega mejor', 0.2], //From 0% to 19%
 		['RUN !!', 0.4], //From 20% to 39%
-		['When no childrends', 0.5], //From 40% to 49%
+		['muerete', 0.5], //From 40% to 49%
 		['Matate', 0.6], //From 50% to 59%
 		['Verga', 0.69], //From 60% to 68%
 		['las de 6 son god', 0.7], //69%
@@ -186,7 +186,7 @@ class PlayState extends MusicBeatState
 	public var camOther:FlxCamera;
 	public var cameraSpeed:Float = 1;
 
-	var dialogue:Array<String> = ['blah blah blah', 'coolswag'];
+	var dialogue:Array<String> = ['blah blah blah', 'pene'];
 	var dialogueJson:DialogueFile = null;
 
 	var halloweenBG:BGSprite;
@@ -2315,9 +2315,9 @@ class PlayState extends MusicBeatState
 		super.update(elapsed);
 
 		if(ratingName == '?') {
-			scoreTxt.text = 'Score: ' + songScore + ' | C Fallos: ' + songMisses + ' | Rating: ' + ratingName;
+			scoreTxt.text = 'C Score: ' + songScore + ' | C Fallos: ' + songMisses + ' | C Rating: ' + ratingName;
 		} else {
-			scoreTxt.text = 'Score: ' + songScore + ' | C Fallos: ' + songMisses + ' | Rating: ' + ratingName + ' (' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%)' + ' - ' + ratingFC;//peeps wanted no integer rating
+			scoreTxt.text = 'C Score: ' + songScore + ' | C Fallos: ' + songMisses + ' | C Rating: ' + ratingName + ' (' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%)' + ' - ' + ratingFC;//peeps wanted no integer rating
 		}
 
 		if(botplayTxt.visible) {
