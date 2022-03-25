@@ -74,8 +74,8 @@ class PlayState extends MusicBeatState
 		['RONalcd McDonalds', 0.69], //From 60% to 68%
 		['las de 6 son god', 0.7], //69%
 		['Let s Go', 0.8], //From 70% to 79%
-		['ala verga', 0.9], //From 80% to 89%
-		['Amoung us', 1], //From 90% to 98%
+		['vete ala verga', 0.9], //From 80% to 89%
+		['ala verga', 1], //From 90% to 98%
                 ['El pendejo', 1], //99%
 		['ALA VERGA', 1] //The value on this one isn't used actually, since Perfect is always "1"
 	];
@@ -1040,7 +1040,7 @@ class PlayState extends MusicBeatState
 		scoreTxt.visible = !ClientPrefs.hideHud;
 		add(scoreTxt);
 
-		botplayTxt = new FlxText(400, timeBarBG.y + 55, FlxG.width - 800, "BOTPLAY", 32);
+		botplayTxt = new FlxText(400, timeBarBG.y + 55, FlxG.width - 800, "No Se jugar", 32);
 		botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		botplayTxt.scrollFactor.set();
 		botplayTxt.borderSize = 1.25;
