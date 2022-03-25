@@ -579,16 +579,16 @@ class TitleState extends MusicBeatState
 			{
 				case 1:
 					#if PSYCH_WATERMARKS
-					createCoolText(['Psych Engine by'], 15);
+					createCoolText(['The bob mod By'], 15);
 					#else
 					createCoolText(['ninjamuffin99', 'phantomArcade', 'kawaisprite', 'evilsk8er']);
 					#end
 				// credTextShit.visible = true;
 				case 3:
 					#if PSYCH_WATERMARKS
-					addMoreText('Shadow Mario', 15);
-					addMoreText('RiverOaken', 15);
-					addMoreText('shubs', 15);
+					addMoreText('Phlox', 15);
+					addMoreText('omg Wildy', 15);
+					addMoreText('July4n No', 15);
 					#else
 					addMoreText('present');
 					#end
@@ -606,7 +606,7 @@ class TitleState extends MusicBeatState
 					createCoolText(['In association', 'with'], -40);
 					#end
 				case 7:
-					addMoreText('newgrounds', -40);
+					addMoreText('BOB', -40);
 					ngSpr.visible = true;
 				// credTextShit.text += '\nNewgrounds';
 				case 8:
@@ -628,13 +628,13 @@ class TitleState extends MusicBeatState
 				// credTextShit.text = "Friday";
 				// credTextShit.screenCenter();
 				case 13:
-					addMoreText('Friday');
+					addMoreText('The ');
 				// credTextShit.visible = true;
 				case 14:
-					addMoreText('Night');
+					addMoreText('Bob');
 				// credTextShit.text += '\nNight';
 				case 15:
-					addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
+					addMoreText('ass pack'); // credTextShit.text += '\nFunkin';
 
 				case 16:
 					skipIntro();
