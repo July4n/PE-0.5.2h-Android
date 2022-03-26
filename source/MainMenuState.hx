@@ -97,15 +97,6 @@ class MainMenuState extends MusicBeatState
 		menuItems = new FlxTypedGroup<FlxSprite>();
 		add(menuItems);
 
-                var menubob:FlxSprite = new FlxSprite();
-		menubob.frames = Paths.getSparrowAtlas('menubob');
-		menubob.animation.addByPrefix('bop', 'bobMenu', 24, true);
-		menubob.animation.play('bop');
-		menubob.setGraphicSize(Std.int(menubob.width * 5/6));
-		menubob.updateHitbox();
-		menubob.setPosition(FlxG.width - menubob.width + 100, FlxG.height - menubob.height + 100);
-		add(menubob);
-
 		var scale:Float = 1;
 		/*if(optionShit.length > 6) {
 			scale = 6 / optionShit.length;
@@ -123,6 +114,7 @@ class MainMenuState extends MusicBeatState
 			menuItem.animation.play('idle');
 			menuItem.ID = i;
 			menuItems.add(menuItem);
+                        menuItem.x = 100;
 			var scr:Float = (optionShit.length - 4) * 0.135;
 			if(optionShit.length < 6) scr = 0;
 			menuItem.scrollFactor.set(0, scr);
