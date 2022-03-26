@@ -98,7 +98,7 @@ class MainMenuState extends MusicBeatState
 		add(menuItems);
 
                 var menubob:FlxSprite = new FlxSprite();
-		menebob.frames = Paths.getSparrowAtlas('menbob');
+		menubob.frames = Paths.getSparrowAtlas('menubob');
 		menubob.animation.addByPrefix('bop', 'bobMenu', 24, true);
 		menubob.animation.play('bop');
 		menubob.setGraphicSize(Std.int(menubob.width * 5/6));
