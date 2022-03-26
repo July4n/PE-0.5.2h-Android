@@ -292,3 +292,4 @@ class MainMenuState extends MusicBeatState
 			}
 		});
 	}
+}
