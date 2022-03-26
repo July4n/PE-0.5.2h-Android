@@ -97,15 +97,6 @@ class MainMenuState extends MusicBeatState
 		menuItems = new FlxTypedGroup<Alphabet>();
 		add(menuItems);
 
-		var menubob:FlxSprite = new FlxSprite();
-		menubob.frames = Paths.getSparrowAtlas('menubob');
-		menubob.animation.addByPrefix('bop', 'bobmenu', 24, true);
-		menubob.animation.play('bop');
-		menubob.setGraphicSize(Std.int(bobmenu.width * 5/6));
-		menubob.updateHitbox();
-		menubob.setPosition(FlxG.width - bobmenu.width + 100, FlxG.height - menuHypno.height + 100);
-		add(menubob);
-
 		for (i in 0...optionShit.length) {
 			var newAlphabet:Alphabet = new Alphabet(0, 75 + ((i + 1) * 100), optionShit[i], true);
 			newAlphabet.x = 30;
