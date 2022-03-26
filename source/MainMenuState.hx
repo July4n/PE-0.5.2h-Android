@@ -266,34 +266,29 @@ class MainMenuState extends MusicBeatState
 
 	}
 
-	function changeItem(huh:Int = 0) 
+	function changeItem(huh:Int = 0)
 	{
 		curSelected += huh;
-		if (curSelected < 0)
-			curSelected = optionShit.length - 1;
-		if (curSelected >= optionShit.length)
+
+		if (curSelected >= menuItems.length)
 			curSelected = 0;
+		if (curSelected < 0)
+			curSelected = menuItems.length - 1;
 
-		var bullShit:Int = 0;
+		menuItems.forEach(function(spr:FlxSprite)
+		{
+			spr.animation.play('idle');
+			spr.updateHitbox();
 
-		for (item in menuItems.members) {
-			item.targetY = bullShit - curSelected;
-			bullShit++;
-
-			item.alpha = 0.6;
-			if (item.targetY == 0) {
-				item.alpha = 1;
+			if (spr.ID == curSelected)
+			{
+				spr.animation.play('selected');
+				var add:Float = 0;
+				if(menuItems.length > 4) {
+					add = menuItems.length * 8;
+				}
+				camFollow.setPosition(spr.getGraphicMidpoint().x, spr.getGraphicMidpoint().y - add);
+				spr.centerOffsets();
 			}
-		}
+		});
 	}
-
-	private function updateSelection()
-	{
-		// reset all selections
-		menuItems.forEach(function(spr:FlxSprite) {spr.alpha = 0.6;});
-		
-		// set the sprites and all of the current selection
-		menuItems.members[curSelected].alpha = 1;
-		lastCurSelected = Math.floor(curSelected);
-	}
-}
